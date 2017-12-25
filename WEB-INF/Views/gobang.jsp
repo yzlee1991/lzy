@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>五子棋</title>
+    <title>随棋手AI_V1.0</title>
     <style type="text/css">
         canvas{
         display: block;
@@ -595,16 +595,16 @@
 		function saveData(data){
 		console.log(data);
 			$.ajax({
-				async:false,
+				async:true,
 				url: "/lzy/games?gobangdata",
 				data:{data:data.data,winner:data.winner,},
 				dataType:'text',
-				success:function(msg){
+				/* success:function(msg){
 					alert(msg);
 				},
 				error:function(msg){
 					alert("后台错误："+msg);
-				}
+				} */
 			});
 		}
 		
