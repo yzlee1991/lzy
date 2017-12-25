@@ -276,7 +276,7 @@
         		serverData.data=JSON.stringify(chessDataList);
         		saveData(serverData);
         		//刷新页面
-        		//location.reload();
+        		location.reload();
         	}
         }
 
